@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Volodymyr Manzhula CV</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="2.js"></script>
+<style>
+       @media screen and (max-width:580px) {
+           .headerr {
+               display: none;
+           }
+       }
+       @media screen and (max-width:770px) {
+           .exp {
+               border-radius: 10px 10px 0px 0px;
+           }
+       .smr{
+           border-radius:  0px 0px 10px 10px;
+       }
+       }
+       
+       header{
+           
+           height: 40px;
+           
+         
+       display: flex;
+       flex-flow: row wrap;
+       
+       }
+       .inf{
+           border: 1px solid skyblue;
+           min-width: 50%;
+       max-width: max-content;
+       }
+       section{
+           margin: 50px;
+           border-top: 3px dotted skyblue;
+       }
+       section .head{
+           border-bottom: 2px solid black;
+       }
+       .skills{
+           padding-top: 5px;
+       }
+       .skills div{
+          
+           border: 2px solid skyblue;
+       }
+       .lang
+       {
+           display: inline;
+       }
+       .cources{
+           width: 70%;
+           height: auto;
+           justify-content: center;
+       }
+       </style>
+</head>
+<body>
+<div class="btn-primary col-12 text-uppercase text-center" >Volodymyr Manzhula CV</div>
+<header class="container-fluid headerr text-center pt-1 text-decoration-underline">
+             <a class="col-sm-0 col-md-1 btn-primary" style="border-radius: 50px 0px 0px 50px;"></a>
+              <a class="col-sm-12 col-md-2 btn-primary exp" href="#Experience">Experience</a>
+              <a class="col-sm-12 col-md-2 btn-primary "  href="#Education">Education</a>
+              <a class="col-sm-12 col-md-2 btn-primary"  href="#Skills"z>Skills</a>
+              <a class="col-sm-12 col-md-2 btn-primary"  href="#Languages">Languages</a>
+              <a class="col-sm-12 col-md-2 btn-primary smr"  href="#Summary">Summary</a>
+             <a class="col-sm-0 col-md-1 btn-primary" style="border-radius: 0px 50px 50px 0px;"></a>
+</header>
+<section id="Abautme" name="Aboutme" class="container">
+<div class="continer row">
+       <div class="col-sm-12 col-md-7 container pt-5 text-center">
+              <h2 class="">VOLODYMYR MANZHULA</h2>
+              <h4 class="text-info">Junior front-end developer</h4>
+              <p class="inf"><img src="data:image/png;base64,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" width="30px">Phone number: 380678577425 </p>
+              <p class="inf"><img src="https://d338t8kmirgyke.cloudfront.net/icons/icon_pngs/000/007/873/original/email.png" width="30px"> Email: vovamanzhula@gmail.com </p>
+       </div>
+<img src="https://i.ibb.co/BTddMHX/ad9dd8c4-0115-433f-965c-2280938ccc1c-png.jpg" class=" col-12 col-md-3">
+
+</div>
+</section>
+<section id="Experience" class="container">
+       <div class="head"><h2>Experience</h2></div>
+       <ul class="row">
+<li class="col-sm-12 col-md-6">
+<h3>System Administrator</h3>
+<p>date: 09.2019-04.2020</p>
+<p>location: Ternopil</p>
+<h5>what i do</h5>
+<p>As a system administrator, engaged in parsing online stores with js,<br> editing content and maintenance of equipment</p>
+</li>
+<li class="col-sm-12 col-md-6"> 
+       <h3>Instaler-Electrician</h3>
+       <p>date: 09.2020-05.2021</p>
+       <p>location: Ternopil</p>
+       <h5>what i do</h5>
+       <p>Installation of automobile electrical circuits, wiring, etc</p>
+</li> 
+      </ul>
+
+</section>
+<section id="Education" class="container">
+      <div class="head"><h2>Education</h2></div> 
+<ul class="row">
+       <li class="col-sm-12 col-md-6">
+            <h3>Software Engeneer</h3>   
+       <p>date:09.2018-05.2021</p>
+       <p>location: Ternopil</p>
+       <h5>West Ukrainian National University</h5>
+       <p>received a bachelor's degree</p>
+       </li>
+       <li class="col-sm-12 col-md-6">
+              <h3>Software Engeneer</h3>    
+              <p>date:09.2021-ongoing</p>
+              <p>location: Ternopil</p>
+              <h5>West Ukrainian National University</h5>
+              <p>Studying for a master's degree</p>
+       </li>
+</ul>
+</section>
+<section id="Skills" class="container">
+<div class="head"><h2>Skills</h2></div>
+
+<div class="container skills text-center">
+       <span class=" container row">
+       <div class="col-sm-12 col-md-6 col-lg-3">Html</div>
+       <div class="col-sm-12 col-md-6 col-lg-3">Css</div>
+       <div class="col-sm-12 col-md-6 col-lg-3">JavaScript</div>
+       <div class="col-sm-12 col-md-6 col-lg-3">Bootstrap</div>
+       <div class="col-sm-12 col-md-6 col-lg-3">c++</div>
+       <div class="col-sm-12 col-md-6 col-lg-3">JQuery</div>
+       <div class="col-sm-12 col-md-6 col-lg-3">TypeScript</div>
+       <div class="col-sm-12 col-md-6 col-lg-3">Angular</div>
+       </span>
+</div>
+
+</section>
+
+<section id="Languages" class="container">
+<div class="head"><h2>Languages</h2></div>
+<div class="container">
+       <ul class="container">
+              <li class="lang"><h6>English - advanced </h6></li>
+              <li class="lang"><h6>Ukrainian - native</h6></li>
+              <li class="lang"><h6>Polish - intermediate</h6></li>
+              <li class="lang"><h6>Russian - native</h6></li>
+       </ul>
+</div>
+
+
+</section>
+<section id="Summary" class="container">
+       <div class="head"><h2>Summary</h2></div>
+       <p>    My name is Volodymyr, I  studying at the 1st year of WUNU Magistracy in Software
+              Engineering
+              Own qualities: persistence in achieving the goal, honesty, literate language, sociability, active life position,
+              creative thinking, purposefulness, desire for learning, personal and professional growth.
+              </p>
+              <div class="container">
+                     <p>completed JavaScript cources </p>
+              <img  class="cources"src="https://i.ibb.co/8rQF4cr/123.png">
+       </div>
+</section>
+<footer>
+<a href="https://www.instagram.com/vova.manzhula_/" target="_blank">@Instagram</a>
+</footer>
+</body>
+</html>
